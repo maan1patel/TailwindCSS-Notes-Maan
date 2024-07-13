@@ -1,16 +1,19 @@
 Tailwind CSS notes by ~ Maan Patel
 
 * `To setup Tailwind CSS, run these commands on your terminal:`
-1) npm install -D tailwindcss postcss autoprefixer // install required packages
-2) npm install vite (to run the server)
-3) "npx talwindcss init" //-then "npx tailwindcss init -p"
-4) Create a css file "input.css", add it to your html and edit it with this content:
+1) "npm install -D tailwindcss postcss autoprefixer" // install required packages
+2) "npx talwindcss init"
+3) "npx tailwindcss init -p"
+4) "npm install vite" (to run the server)
+5) Create a "index.html" file
+6) Create a css file "input.css", add it to your html and edit it with this content:
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
-5) In your tailwind.config.js file replace content: [], with content: ["*"],
-6) Add "scripts": {"start": "vite"} to your scripts in package.json
-7) Run npm run start command to start a dev server
+7) Add this scipt line: "<script src="https://cdn.tailwindcss.com"></script>" in the <head></head> tag (because to see the suggestions for classes in the html file while coding which makes your work easier)
+8) In your tailwind.config.js file replace content: [], with content: ["*"],
+9) Add "scripts": {"start": "vite"} to your scripts in package.json
+10) Run npm run start command to start a dev server
 
 * `Advantages of using Talwind CSS: `
 1) No reinventing of class names required
@@ -43,6 +46,22 @@ Tailwind CSS notes by ~ Maan Patel
 20) ITEMS-CENTER (to keep the items in center)
 21) JUSTIFY-CENTER (to keep the content in center)
 22) TEXT-LG (To make text large)
+23) ORDER-1/2/... (to give the elements order while making the website responsive)
+24) INSET-0 (top,bottom,right,left all get 0)
+25) ABSOLUTE 
+26) STATIC
+
+* `Flex I.M.P classes`
+1) FLEX-COL (to make the classes of column in vertical direction)
+2) FLEX-COL-REVERSE (to make the classes of column in horizontal direction from vertical)
+3) FLEX ROW
+
+* `Width and Height IMP Classes`
+1) W-[33rem]
+2) H-[23rem]
+
+* `to hide tag in tailwind for responsive devices`
+1) max-sm:hidden
 
 * `Fonts and Sizing: `
 1) FONT-SANS (Properties: font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",  "Noto Color Emoji";)
@@ -93,7 +112,7 @@ Tailwind CSS notes by ~ Maan Patel
 2) npx tailwindcss init maan --full
 
 * `Deploying Tailwind Website to Production `: 
-1) Add this tag iinto package.json file into scripts tag: 
+1) Add this tag into package.json file into scripts tag: 
     "build": "vite build"
 2) npm run build 
 
